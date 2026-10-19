@@ -4,25 +4,16 @@
 		"win": "2.2081",
 		"android": "2.2081"
 	},
-	"version": "v2.0.0",
-	"id": "yourname.predictivebuffer",
-	"name": "Predictive Input Buffer",
-	"developer": "YourName",
-	"description": "Early-press input buffer with selectable stages. Android 64 + Windows.",
+	"id": "yourname.prediction-buffer",
+	"name": "Prediction Buffer",
+	"version": "v1.0.0",
+	"developer": "yourname",
+	"description": "Trajectory-based input buffer with 5 selectable stages (F6 to cycle).",
 	"settings": {
-		"buffer-on": {
+		"enabled": {
 			"type": "bool",
-			"name": "Buffer enabled",
+			"name": "Enabled",
+			"description": "Master switch. F6 (keyboard) or the Buffer button in the pause menu cycles Stage 1-5 and OFF.",
 			"default": true
 		},
-		"stage": {
-			"type": "int",
-			"name": "Buffer stage",
-			"description": "1: 2 ticks, 2: 4, 3: 8, 4: 16, 5: 24, 6: 32, 7: 48, 8: 54, 9: 60, 10: OFF. (4 ticks = 1 frame at 60fps.) Also cyclable from the pause menu.",
-			"default": 1,
-			"min": 1,
-			"max": 10,
-			"control": { "slider": true, "arrows": true }
-		}
-	}
-}
+		"start-stage": {
