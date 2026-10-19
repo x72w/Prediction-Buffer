@@ -8,12 +8,5 @@
 	"name": "Prediction Buffer",
 	"version": "v1.0.0",
 	"developer": "yourname",
-	"description": "Trajectory-based input buffer with 5 selectable stages (F6 to cycle).",
-	"settings": {
-		"enabled": {
-			"type": "bool",
-			"name": "Enabled",
-			"description": "Master switch. F6 (keyboard) or the Buffer button in the pause menu cycles Stage 1-5 and OFF.",
-			"default": true
-		},
-		"start-stage": {
+	"description": "Trajectory-based input buffer with 5 selectable stages."
+}
